@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2023 a las 17:51:11
+-- Tiempo de generación: 30-04-2023 a las 18:03:35
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -39,13 +39,14 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
-(0, 'Maria', 'Steven', 'maria@gmail.com'),
-(1, 'Roberto', 'Sopedra', 'roberto@gmail.com'),
-(2, 'Jane', 'Doe', 'janedoe@gmail.com'),
-(3, 'Bob', 'Smith', 'bobsmith@gmail.com'),
-(4, 'Evelyn', 'Freitas', 'evelynfreitas@gmail.'),
-(5, 'Stephanie', 'Torres', 'stephanie@gmail.com'),
-(6, 'Carla', 'Jackson', 'carla@gmail.com');
+(1, 'Maria', 'Steven', 'maria@gmail.com'),
+(2, 'Roberto', 'Sopedra', 'roberto@gmail.com'),
+(3, 'Jane', 'Doe', 'janedoe@gmail.com'),
+(4, 'Bob', 'Smith', 'bobsmith@gmail.com'),
+(5, 'Evelyn', 'Freitas', 'evelynfreitas@gmail.'),
+(6, 'Stephanie', 'Torres', 'stephanie@gmail.com'),
+(7, 'Carla', 'Jackson', 'carla@gmail.com'),
+(8, 'Teresa', 'Pascoal', 'tere@gmail.com');
 
 --
 -- Índices para tablas volcadas
@@ -56,6 +57,16 @@ INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
 --
 ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
