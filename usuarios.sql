@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 30-04-2023 a las 17:22:15
+-- Tiempo de generación: 30-04-2023 a las 17:51:11
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `usuarios` (
-  `ID` varchar(20) NOT NULL,
+  `ID` int(11) NOT NULL,
   `NOMBRE` varchar(20) NOT NULL,
   `APELLIDO` varchar(20) NOT NULL,
   `EMAIL` varchar(20) NOT NULL
@@ -39,11 +39,13 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`ID`, `NOMBRE`, `APELLIDO`, `EMAIL`) VALUES
-('1', 'Roberto', 'Sopedra', 'roberto@gmail.com'),
-('2', 'Jane', 'Doe', 'janedoe@example.com'),
-('3', 'Bob', 'Smith', 'bobsmith@example.com'),
-('4', 'Evelyn', 'Freitas', 'evelynfreitas@gmail.'),
-('5', 'Stephanie', 'Torres', 'stephanie@gmail.com');
+(0, 'Maria', 'Steven', 'maria@gmail.com'),
+(1, 'Roberto', 'Sopedra', 'roberto@gmail.com'),
+(2, 'Jane', 'Doe', 'janedoe@gmail.com'),
+(3, 'Bob', 'Smith', 'bobsmith@gmail.com'),
+(4, 'Evelyn', 'Freitas', 'evelynfreitas@gmail.'),
+(5, 'Stephanie', 'Torres', 'stephanie@gmail.com'),
+(6, 'Carla', 'Jackson', 'carla@gmail.com');
 
 --
 -- Índices para tablas volcadas
